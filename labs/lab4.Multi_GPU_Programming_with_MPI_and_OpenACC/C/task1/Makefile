@@ -2,7 +2,7 @@ all: run
 
 laplace2d: laplace2d.c common.h laplace2d_serial.h Makefile
 	#TODO: Use MPI compiler wrapper
-	pgcc -fast -acc -ta=nvidia laplace2d.c -o laplace2d
+	pgcc -fast -acc -ta=tesla:cc35 -ta=tesla:cc50 laplace2d.c -o laplace2d
 
 clean:
 	rm -f laplace2d laplace2d.solution laplace2d.nvvp

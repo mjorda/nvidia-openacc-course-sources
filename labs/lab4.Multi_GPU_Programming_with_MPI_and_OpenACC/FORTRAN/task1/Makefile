@@ -1,7 +1,7 @@
 all: run
 
 laplace2d: laplace2d.F03 laplace2d_serial.F03 Makefile
-	mpifort -fast -acc -ta=tesla -Minfo=accel laplace2d.F03 laplace2d_serial.F03 -o laplace2d
+	mpifort -fast -acc -ta=tesla:cc35 -ta=tesla:cc50 -Minfo=accel laplace2d.F03 laplace2d_serial.F03 -o laplace2d
 
 clean:
 	rm -f laplace2d laplace2d.solution *.o
