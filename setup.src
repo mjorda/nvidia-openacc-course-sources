@@ -1,0 +1,5 @@
+# Load with cmd: source <this_files_name>
+
+export MPI_HOME=/opt/pgi/linux86-64/2016/mpi/openmpi-1.10.2
+export PATH=/opt/pgi/linux86-64/16.5/bin:$MPI_HOME/bin:$PATH
+export LD_LIBRARY_PATH=/opt/pgi/linux86-64/16.5/lib:$MPI_HOME/lib:$LD_LIBRARY_PATH
