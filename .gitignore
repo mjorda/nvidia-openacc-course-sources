@@ -7,3 +7,6 @@ laplace
 *~
 *.nvprof
 *.out
+
+#binaries
+laplace2d
